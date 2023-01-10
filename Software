@@ -1,0 +1,13 @@
+Ardu Pilot install page
+https://firmware.ardupilot.org/
+Scroll down to "MissionPlanner". Then once open find "MissionPlanner-latest.msi". Then go through the installer and finish installing MissionPlanner.
+
+The next steps are only for if the flight controller does not connect to mission planner from a *cabled connection* if cable works and wireless does not skip to line ""
+After finishing installing go back to the install page find "Rover" then select "latest". Scroll down and find "Matek H743" and select "ardurover_with_bl.hex". 
+Then go to https://www.st.com/en/development-tools/stm32cubeprog.html and install STM32CubeProgrammer.
+Open CubeProgrammer and navigate on the left side to the "Erasing and Programming" tab.
+You will want to have a cabled connection with the flight controller at this point.
+Make sure you put the flight controller on boot mode by pressing and holding the boot button near the USB C port you plugged into. 
+On the right side of CubeProgrammer refresh the port and see if a port comes up you can connect to. If it does not come up unplug flight rontroller and repeat step 10. 
+Finally go to file path go to downloads and select "ardurover_with_bl.hex".
+Once finished downloading try to use mission planner again. 
